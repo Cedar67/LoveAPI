@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuiteDemo" verbose="1" parallel="false" thread-count="1">
+
+	<parameter name="testEnv" value="${testEnv}" />
+	<parameter name="testBrowser" value="${testBrowser}" />
+       
+    <test name="TestSuiteDemo" preserve-order="true">
+        <classes>
+            <class name="testcases.application.ApiTest.LE.LeDemoApiTest">
+                <methods>
+                    <include name="Test_Case_0_1_1"></include>
+                    <include name="Test_Case_0_1_2"></include>
+                    <include name="Test_Case_0_1_3"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
